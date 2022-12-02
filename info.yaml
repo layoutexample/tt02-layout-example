@@ -22,7 +22,7 @@ documentation:
   title:        "Optimised Euclidean Algorithm"      # Project title
   description:  "Finding gcd of 2 4-bit number"      # Short description of what your project does
   how_it_works: "This circuit finds the gcd (greatest common divisor) of 2 4-bit numbers which are entered by dip switch and it uses the Euclidean algorithm. Result displays by seven segment display. The algorithm has been optimized by designing the control unit and datapath."      # Longer description of how the project works
-  how_to_test:  "TODO"      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
+  how_to_test:  "Enter 4-bit 1st number by dip switches and set num_okey switch to 1. By doing that 1st number saved in register. Set num_okey switch to 0 and enter 2nd 4-bit number. Set num_okey switch to 0 and after that gcd result will appear in seven segment display."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   external_hw:  "None"      # Describe any external hardware needed
   language:     "Verilog" # other examples include Verilog, Amaranth, VHDL, etc
   doc_link:     "https://github.com/RecepSaid/tt02-euclidean-algorithm"      # URL to longer form documentation, eg the README.md in your repository
