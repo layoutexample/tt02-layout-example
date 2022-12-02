@@ -22,28 +22,28 @@ documentation:
   title:        "Optimised Euclidean Algorithm"      # Project title
   description:  "Finding gcd of 2 4-bit number"      # Short description of what your project does
   how_it_works: "This circuit finds the gcd (greatest common divisor) of 2 4-bit numbers which are entered by dip switch and it uses the Euclidean algorithm. Result displays by seven segment display. The algorithm has been optimized by designing the control unit and datapath."      # Longer description of how the project works
-  how_to_test:  ""      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
+  how_to_test:  "TODO"      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   external_hw:  "None"      # Describe any external hardware needed
   language:     "Verilog" # other examples include Verilog, Amaranth, VHDL, etc
   doc_link:     "https://github.com/RecepSaid/tt02-euclidean-algorithm"      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     1000       # Clock frequency in Hz (if required) we are expecting max clock frequency to be ~6khz. Provided on input 0.
   picture:      ""      # relative path to a picture in your repository
   inputs:               # a description of what the inputs do
-    - clock
-    - number[0]
-    - number[1]
-    - number[2]
-    - number[3]
-    - none
-    - rst
-    - num_okey
+    - clock      #clock in switch-0
+    - number[0]  #4-bit number bit-0
+    - number[1]  #4-bit number bit-1
+    - number[2]  #4-bit number bit-2
+    - number[3]  #4-bit number bit-3
+    - none       #none
+    - rst        #reset
+    - num_okey   #okey signal for 4-bit number
   outputs:
-    - segment a         # a description of what the outputs do
-    - segment b
-    - segment c
-    - segment d
-    - segment e
-    - segment f
-    - segment g
+    - ssd_out[0]  #seven segment display 
+    - ssd_out[1]  #seven segment display 
+    - ssd_out[2]  #seven segment display 
+    - ssd_out[3]  #seven segment display 
+    - ssd_out[4]  #seven segment display 
+    - ssd_out[5]  #seven segment display 
+    - ssd_out[6]  #seven segment display 
     - none
 
